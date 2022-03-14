@@ -12,9 +12,9 @@ object ScalaJdbcConnectSelect {
   def main(args: Array[String]) {
     // connect to the database named "mysql" on the localhost
     val driver = "com.mysql.jdbc.Driver"
-    val url = "jdbc:mysql://articuno.linkedstore.com:3306/tiendanube?zeroDateTimeBehavior=convertToNull&useSSL=false&characterEncoding=utf8"
-    val username = "wpmuprod"
-    val password = "mysqlwpmu4lombo"
+    val url = "jdbc:mysql://<database-instance>:3306/<database-name>?zeroDateTimeBehavior=convertToNull&useSSL=false&characterEncoding=utf8"
+    val username = "<username>"
+    val password = "<password>"
 
     // there's probably a better way to do this
     var connection:Connection = null
